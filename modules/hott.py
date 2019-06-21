@@ -4,7 +4,7 @@ import random
 
 NAME    = 'hott'
 ENABLE  = True
-PATTERN = '.*[ ]hot[ ].*'
+PATTERN = '(?<!\S)[Hh][Oo][Tt](?!\S)'
 IGNORE  = ('gonzobot', 'kittykatbot')
 
 def command(bot, nick, message, channel, target=None):
